@@ -1,0 +1,14 @@
+menu "WiFi Configuration"
+
+config ESP_WIFI_SSID
+    string "WiFi SSID"
+    default "esp-ap1"
+    help
+	SSID (network name) for AP.
+		
+config MAX_STA_CONN
+    int "Max STA conn"
+    default 4
+    help
+	Max number of the STA connects to AP.
+endmenu
