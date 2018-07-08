@@ -12,12 +12,16 @@ O trabalho consiste de 2 partes:
 O trabalho possui um programa cliente, que envia um pacote e aguarda uma resposta, e um programa servidor, que aguarda um pacote, exibe seu conteudo e envia um resposta de recebimento. São disponibilizadas algumas opções de codificação dos dados.
 #### Compilação
 Abra um terminal na pasta T1 do projeto e execute:
-``gcc cliente.c -o cliente.app -lm``
-``gcc servidor.c -o servidor.app -lm``
+```
+gcc cliente.c -o cliente.app -lm
+gcc servidor.c -o servidor.app -lm
+```
 
 #### Utilização
-``./servidor interface myName``
-``./cliente interface MACaddr sourceName destinationName message encoding``
+```
+./servidor interface myName
+./cliente interface MACaddr sourceName destinationName message encoding
+```
 ##### Encodings:
 -n: NRZ
 -m: Manchester
@@ -31,14 +35,20 @@ https://esp-idf.readthedocs.io/en/latest/get-started/index.html#setup-toolchain
 Abra um terminal na pasta T2 do projeto.
 #### Configuração de Compilação
 Para configurar o nome do Access Point execute:
-``make menuconfig``
+```
+make menuconfig
+```
 E defina o nome na opção "WiFi Configuration".
 A porta utilizada para comunicação com a placa ESP32 também pode ser definida em "Serial flasher config". Por padrão ela é definida como ``/dev/ttyUSB0``.
 
 #### Compilação e transferência para a placa
 Para rodar o projeto na placa execute:
-``make flash``
+```
+make flash
+```
 Aguarde a compilação. Após enviado para a placa é possível conferir a saída do código executando:
-``make monitor``
+```
+make monitor
+```
 
 
