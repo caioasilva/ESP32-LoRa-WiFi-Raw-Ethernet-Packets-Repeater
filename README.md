@@ -41,6 +41,15 @@ make menuconfig
 E defina o nome na opção "WiFi Configuration".
 A porta utilizada para comunicação com a placa ESP32 também pode ser definida em "Serial flasher config". Por padrão ela é definida como ``/dev/ttyUSB0``.
 
+Na opção "Component config > LoRa Configuration" é possível configuração os pinos GPIO usados para conexão com a interface LoRa. Os pinos utilizados em nossa placa ESP32 foram:
+```
+(18) CS GPIO
+(14) RST GPIO
+(19) MISO GPIO
+(27) MOSI GPIO
+(5) SCK GPIO
+```
+
 #### Compilação e transferência para a placa
 Para rodar o projeto na placa execute:
 ```
