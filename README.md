@@ -39,6 +39,7 @@ Para configurar o nome do Access Point execute:
 make menuconfig
 ```
 E defina o nome na opção "WiFi Configuration".
+
 A porta utilizada para comunicação com a placa ESP32 também pode ser definida em "Serial flasher config". Por padrão ela é definida como ``/dev/ttyUSB0``.
 
 Na opção "Component config > LoRa Configuration" é possível configuração os pinos GPIO usados para conexão com a interface LoRa. Os pinos utilizados em nossa placa ESP32 foram:
@@ -49,6 +50,7 @@ Na opção "Component config > LoRa Configuration" é possível configuração o
 (27) MOSI GPIO
 (5) SCK GPIO
 ```
+Biblioteca utilizada: https://github.com/Inteform/esp32-lora-library
 
 #### Compilação e transferência para a placa
 Para rodar o projeto na placa execute:
@@ -59,5 +61,3 @@ Aguarde a compilação. Após enviado para a placa é possível conferir a saíd
 ```
 make monitor
 ```
-
-
